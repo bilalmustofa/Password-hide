@@ -1,0 +1,29 @@
+.container {
+    background-color: antiquewhite;
+}
+.password-wrapper {
+    border-radius: 20px;
+    padding: 35px;
+    color: black;
+    width: 100%;
+    max-width: 350px;
+    background-color: brown;
+    box-shadow: 4px 5px 10px rgb(0, 0, 0, 0.2);
+}
+.password-box {
+    background-color:white;
+    padding-right:10px;
+    border-radius: 10px;
+}
+.form-label {
+    font-weight: bold;
+    font-size: 18px;
+}
+.password-input {
+    box-shadow: none !important;
+    border: none;
+    width: 100%;
+}
+.eye-icon {
+    cursor: pointer;
+}
