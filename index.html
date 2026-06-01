@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password View Hide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Password Hide & Show Toggle</title>
 </head>
 <body>
-    
+    <div class="container d-flex justify-content-center align-items-center vh-100 flex-column">
+        <h1 class="mb-5">Password Hide & Show Toggle</h1>
+        <div class="password-wrapper">
+            <label for="password" class="form-label">Password</label>
+            <div class="password-box d-flex justify-content-center align-items-center">
+                <input type="password" class="password-input form-control" id="password" placeholder="Enter the password">
+                <span class="eye-icon"><i class="fa-solid fa-eye"></i></span>
+                <span class="eye-icon"><i class="fa-solid fa-eye-slash"></i></span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
