@@ -1,23 +1,24 @@
 .container {
-    background-color: antiquewhite;
+    background-color: rgb(214, 133, 26);
 }
 .password-wrapper {
     border-radius: 20px;
-    padding: 35px;
+    padding:20px 35px;
+    padding-top: 20px;
     color: black;
     width: 100%;
     max-width: 350px;
-    background-color: brown;
+    background-color:rgb(31, 16, 16);
     box-shadow: 4px 5px 10px rgb(0, 0, 0, 0.2);
 }
 .password-box {
     background-color:white;
     padding-right:10px;
-    border-radius: 10px;
 }
 .form-label {
     font-weight: bold;
     font-size: 18px;
+    color: white;
 }
 .password-input {
     box-shadow: none !important;
@@ -27,9 +28,18 @@
 .eye-icon {
     cursor: pointer;
     border-radius: 50%;
-    padding: 5px;
+    padding: 5px 7px;
 }
 
+.eye-icon:hover {
+    background-color: rgb(226, 223, 223);
+}
 .eye-icon:active{
-    box-shadow:0 0 10px 5px rgb(0, 0, 0, 0.1);
+    box-shadow:0 0 10px 5px rgb(0, 0, 0, 0.2);
+}
+
+#message {
+    display: none;
+    font-size: 13px;
+    font-weight: bold;
 }
