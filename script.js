@@ -49,3 +49,31 @@ passwordInput.addEventListener('input', () => {
         message.style.color = '#26d730';
     }
 });
+
+// Update password strength indicator
+const strengthBar = document.getElementById('strengthBar');
+
+passwordInput.addEventListener('input', () => {
+    const passwordLength = passwordInput.value.length;
+    let width = 0;
+
+    if(passwordLength > 0) {
+        strengthBar.style.display = 'block';
+    } else {
+        strengthBar.style.display = 'none';
+    }
+
+    if (passwordLength < 4 && passwordLength > 0) {
+        width = 25;
+        strengthBar.style.backgroundColor = '#ff5925';
+    } else if (passwordLength < 8 && passwordLength >= 4) {
+        width = 50;
+        strengthBar.style.backgroundColor = 'yellow';
+    } else if (passwordLength >= 8) {
+        width = 100;
+        strengthBar.style.backgroundColor = '#26d730';
+    } else {
+        strengthBar.style.backgroundColor = '';
+    }
+    strengthBar.style.width = `${width}%`;
+});
