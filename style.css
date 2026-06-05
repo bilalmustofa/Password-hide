@@ -43,3 +43,18 @@
     font-size: 13px;
     font-weight: bold;
 }
+/* Password Strength Indicator */
+.strength-bar {
+    display: none;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.strength-bar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
