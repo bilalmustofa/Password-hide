@@ -7,7 +7,7 @@
     padding-top: 20px;
     color: black;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     background-color:rgb(31, 16, 16);
     box-shadow: 4px 5px 10px rgb(0, 0, 0, 0.2);
 }
@@ -57,4 +57,18 @@
     height: 100%;
     width: 0%;
     transition: width 0.3s ease;
+}
+/* Password Strength Parameters */
+.strength-parameter {
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+}
+.parameter-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.parameter-item i {
+    margin-right: 10px;
 }
