@@ -39,13 +39,14 @@
 }
 
 #message {
-    display: none;
+    /* display: none; */
     font-size: 13px;
     font-weight: bold;
+    color: white;
 }
 /* Password Strength Indicator */
 .strength-bar {
-    display: none;
+    /* display: none; */
     height: 10px;
     background-color: #ccc;
     border-radius: 5px;
